@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAcademy - Inscripción</title>
+    <link rel="stylesheet" href="CSS/miEstilo.css">
+   
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentoria.html">Mentoría</a></li>
+                <li><a href="inscripcion.html" class="btn_destacado">Inscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <h2 class="titulo-seccion">Inscripción al Curso</h2>
+        <div class="card-formulario">
+            <form action="procesar_inscripcion.php" method="GET">
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="matricula">MATRICULA</label>
+                    <input type="text" id="matricula" name="matricula" required placeholder="Ingresa tu matrícula">
+                </div>
+                <div class="form-group">
+                    <label for="correo">CORREO</label>
+                    <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="carrera">CARRERA</label>
+                    <select id="carrera" name="carrera" required>
+                        <option value="" disabled selected>Selecciona tu carrera</option>
+                        <option value="sistemas">Ingeniería en Sistemas Computacionales</option>
+                        <option value="software">Ingeniería en Software</option>
+                        <option value="disenio">Diseño de Interfaces Digitales</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-enviar">Inscribirme</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
